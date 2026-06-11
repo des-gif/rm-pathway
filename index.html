@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registered Manager Pathway — Developing the Next Generation of Care Leaders</title>
+<meta name="description" content="The Registered Manager Pathway: develop, prepare and get placed. A specialist development and placement programme helping ambitious care professionals step into Registered Manager roles — Ofsted and CQC ready.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#13294a;--navy-d:#0d1f3a;--amber:#e3a43a;--amber-d:#c98a22;--teal:#2a9d8f;
+    --cream:#faf7f1;--card:#ffffff;--ink:#1a2535;--muted:#5a6677;--line:#e7e2d8;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:16px;padding:14px 24px;border-radius:999px;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:.15s;font-family:Inter,sans-serif}
+  .btn.amber{background:var(--amber);color:var(--navy-d)}
+  .btn.amber:hover{background:var(--amber-d)}
+  .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+  .btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .btn.navy{background:var(--navy);color:#fff}
+  .btn.navy:hover{background:var(--navy-d)}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(19,41,74,.96);backdrop-filter:blur(8px)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{color:#fff;font-family:Fraunces,serif;font-weight:600;font-size:19px;text-decoration:none}
+  .brand b{color:var(--amber)}
+  nav .tel{color:#fff;text-decoration:none;font-weight:600;font-size:15px;display:flex;align-items:center;gap:8px}
+  nav .tel:hover{color:var(--amber)}
+
+  /* HERO */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#1a3a63 55%,var(--navy-d) 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(227,164,58,.22),transparent 65%)}
+  .hero .wrap{position:relative;padding:84px 24px 92px;max-width:920px;text-align:center}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);background:rgba(227,164,58,.12);border:1px solid rgba(227,164,58,.3);padding:7px 16px;border-radius:999px;margin-bottom:26px}
+  .hero h1{font-size:clamp(34px,5.5vw,58px);color:#fff;margin-bottom:20px;font-weight:600}
+  .hero .lead{font-size:clamp(18px,2.4vw,22px);color:#dce6f2;max-width:680px;margin:0 auto 16px}
+  .hero .place{font-weight:600;color:#fff}
+  .hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:34px 0 22px}
+  .trust{font-size:14.5px;color:#aebfd4;max-width:640px;margin:0 auto}
+  .trust b{color:#fff}
+
+  /* PILLARS */
+  .pillars{background:#fff;border-bottom:1px solid var(--line)}
+  .pillars .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:0}
+  .pillar{padding:40px 30px;text-align:center;border-right:1px solid var(--line)}
+  .pillar:last-child{border-right:0}
+  .pillar .n{font-family:Fraunces,serif;font-size:15px;font-weight:700;color:var(--amber);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+  .pillar h3{font-size:23px;margin-bottom:8px}
+  .pillar p{font-size:15.5px;color:var(--muted)}
+
+  /* SECTIONS */
+  section.block{padding:78px 0}
+  .center{text-align:center;max-width:720px;margin:0 auto 14px}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+  h2{font-size:clamp(28px,3.8vw,40px);margin-bottom:16px}
+  .sec-lead{font-size:18px;color:var(--muted);max-width:640px;margin:0 auto}
+
+  .feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 34px;margin-top:44px;max-width:900px;margin-left:auto;margin-right:auto}
+  .feat{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .feat .tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--teal);display:grid;place-items:center;margin-top:1px}
+  .feat .tick svg{width:14px;height:14px;stroke:#fff;stroke-width:3;fill:none}
+  .feat span{font-weight:500;font-size:16px}
+
+  /* WHO */
+  .who{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:36px}
+  .chips span{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:11px 22px;font-weight:600;font-size:16px;color:var(--navy)}
+
+  /* BENEFITS */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:46px}
+  .bcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:0 8px 30px rgba(19,41,74,.05)}
+  .bcard.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .bcard h3{font-size:24px;margin-bottom:6px}
+  .bcard.dark h3{color:#fff}
+  .bcard .who-for{font-size:13.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
+  .bcard ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .bcard li{display:flex;gap:11px;align-items:flex-start;font-size:16px}
+  .bcard li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-top:9px}
+  .bcard.dark li::before{background:var(--amber)}
+
+  /* PATHWAY STEPS */
+  .steps{background:linear-gradient(160deg,var(--navy),var(--navy-d));color:#fff}
+  .steps .kicker{color:var(--amber)}
+  .steps h2{color:#fff}
+  .steps .sec-lead{color:#bccbe0}
+  .steprow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px;counter-reset:s}
+  .step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px 18px;text-align:center}
+  .step .num{font-family:Fraunces,serif;font-size:30px;color:var(--amber);font-weight:700;margin-bottom:8px}
+  .step h4{font-size:17px;margin-bottom:6px;font-family:Inter,sans-serif;font-weight:700}
+  .step p{font-size:14px;color:#bccbe0}
+
+  /* INSPECTION CALLOUT */
+  .insp{background:#fff}
+  .insp .wrap{display:flex;align-items:center;gap:50px;flex-wrap:wrap}
+  .insp .txt{flex:1;min-width:300px}
+  .insp h2{margin-bottom:14px}
+  .insp .badges{flex:1;min-width:260px;display:flex;flex-direction:column;gap:14px}
+  .badge{display:flex;align-items:center;gap:16px;background:var(--cream);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:12px;padding:18px 22px}
+  .badge b{font-family:Fraunces,serif;font-size:19px}
+  .badge p{font-size:14.5px;color:var(--muted)}
+
+  /* QUOTE */
+  .quote{background:var(--amber);color:var(--navy-d);text-align:center}
+  .quote .wrap{padding:64px 24px}
+  .quote p{font-family:Fraunces,serif;font-size:clamp(24px,3.4vw,34px);font-weight:600;max-width:840px;margin:0 auto;line-height:1.25}
+
+  /* CTA + FORM */
+  .cta-sec{background:var(--navy-d);color:#fff}
+  .cta-sec .wrap{padding:74px 24px}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+  .cta-grid h2{color:#fff;font-size:clamp(28px,3.6vw,40px)}
+  .cta-grid .lead{color:#bccbe0;font-size:18px;margin:14px 0 26px}
+  .callbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:22px 24px;margin-bottom:14px}
+  .callbox .lbl{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:4px}
+  .callbox a{font-family:Fraunces,serif;font-size:30px;font-weight:700;color:#fff;text-decoration:none}
+  form{background:#fff;border-radius:18px;padding:30px;color:var(--ink)}
+  form h3{font-size:22px;margin-bottom:4px}
+  form .fsub{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+  .field{margin-bottom:13px}
+  label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:5px}
+  input,select,textarea{width:100%;font:inherit;font-size:15.5px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fbfaf7}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--amber);border-color:var(--amber)}
+  textarea{min-height:84px;resize:vertical}
+  form .btn{width:100%;justify-content:center;margin-top:6px}
+  .hp{position:absolute;left:-9999px}
+
+  /* FOOTER */
+  footer{background:#0a1526;color:#9fb0c6;padding:48px 0 30px;font-size:14.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  footer .brand{font-size:20px}
+  footer a{color:var(--amber);text-decoration:none}
+  .smallprint{border-top:1px solid rgba(255,255,255,.08);margin-top:28px;padding-top:20px;font-size:12.5px;color:#6f8199;line-height:1.6}
+
+  @media(max-width:860px){
+    .pillars .wrap{grid-template-columns:1fr} .pillar{border-right:0;border-bottom:1px solid var(--line)}
+    .feature-grid{grid-template-columns:1fr} .two{grid-template-columns:1fr}
+    .steprow{grid-template-columns:1fr 1fr} .cta-grid{grid-template-columns:1fr}
+    nav .tel span{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">Registered Manager <b>Pathway</b></a>
+    <div style="display:flex;align-items:center;gap:20px">
+      <a href="providers.html" style="color:#cdd8e6;text-decoration:none;font-size:14.5px;font-weight:600">For providers &rsaquo;</a>
+      <a href="tel:02046180163" class="tel">&#9742; <span>020 4618 0163</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Develop · Prepare · Get Placed</span>
+    <h1>Developing the Next Generation of Care Leaders</h1>
+    <p class="lead">The Registered Manager Pathway is a specialist development and placement programme for ambitious care professionals ready to step into leadership — and <span class="place">get placed</span> into real Registered Manager roles.</p>
+    <div class="cta">
+      <a href="#enquire" class="btn amber">Start your pathway</a>
+      <a href="tel:02046180163" class="btn ghost">&#9742; 020 4618 0163</a>
+    </div>
+    <p class="trust">For <b>deputy managers, seniors &amp; team leaders</b> in children's homes, supported accommodation &amp; adult social care. <b>Ofsted &amp; CQC ready.</b></p>
+  </div>
+</header>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillar"><div class="n">01 · Develop</div><h3>Build the skills</h3><p>Leadership, safeguarding, compliance and the confidence to lead a regulated service.</p></div>
+    <div class="pillar"><div class="n">02 · Prepare</div><h3>Get inspection-ready</h3><p>Ofsted and CQC interview preparation, and the realities of managing a service.</p></div>
+    <div class="pillar"><div class="n">03 · Place</div><h3>Step into the role</h3><p>Access genuine Registered Manager opportunities through our agency placement route.</p></div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker">More than training</div>
+      <h2>Build the Knowledge, Confidence and Readiness to Lead</h2>
+      <p class="sec-lead">This isn't just about passing an interview. It's about becoming a capable, safe and confident leader in care. The pathway supports you with:</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Ofsted &amp; CQC interview preparation</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Leadership &amp; management development</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Safeguarding knowledge</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Regulatory understanding</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Quality assurance &amp; audit awareness</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Staff supervision &amp; team management</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Care planning &amp; risk management</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Professional confidence &amp; communication</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Understanding inspection expectations</span></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span><span>Preparing for the realities of management</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="who block">
+  <div class="wrap center">
+    <div class="kicker">Who it's for</div>
+    <h2>Helping Deputy Managers and Senior Staff Step Into Leadership</h2>
+    <p class="sec-lead">If you have the right background, values and ambition, the pathway gives you the structured development and placement support to make the leap.</p>
+    <div class="chips">
+      <span>Deputy managers</span><span>Senior support workers</span><span>Team leaders</span>
+      <span>Assistant managers</span><span>Experienced care professionals</span><span>Aspiring Registered Managers</span>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="center"><div class="kicker">The benefits</div><h2>Built for Candidates and Providers Alike</h2></div>
+    <div class="two">
+      <div class="bcard">
+        <div class="who-for">For candidates</div>
+        <h3>Become inspection-ready &amp; get placed</h3>
+        <ul>
+          <li>Understand exactly what Ofsted or CQC expect</li>
+          <li>Prepare with confidence for registration interviews</li>
+          <li>Develop stronger safeguarding awareness</li>
+          <li>Grow your leadership confidence</li>
+          <li>Understand the manager's role in compliance &amp; quality</li>
+          <li>Build a stronger professional profile</li>
+          <li>Access Registered Manager opportunities through our placement route</li>
+        </ul>
+      </div>
+      <div class="bcard dark">
+        <div class="who-for">For providers</div>
+        <h3>Access developing leaders you can trust</h3>
+        <ul>
+          <li>Identify and secure future Registered Managers</li>
+          <li>Reduce recruitment uncertainty</li>
+          <li>Access candidates with targeted development</li>
+          <li>Strengthen your leadership capacity</li>
+          <li>Improve inspection readiness</li>
+          <li>Build safer, more stable management structures</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps block">
+  <div class="wrap">
+    <div class="center"><div class="kicker">Your leadership pathway</div><h2>From Deputy Manager to Registered Manager</h2><p class="sec-lead">A clear, supported route — with development and placement working together.</p></div>
+    <div class="steprow">
+      <div class="step"><div class="num">1</div><h4>Apply</h4><p>Tell us your experience and ambition.</p></div>
+      <div class="step"><div class="num">2</div><h4>Assess</h4><p>We check suitability and readiness.</p></div>
+      <div class="step"><div class="num">3</div><h4>Develop</h4><p>Targeted leadership &amp; compliance support.</p></div>
+      <div class="step"><div class="num">4</div><h4>Prepare</h4><p>Ofsted / CQC interview &amp; role readiness.</p></div>
+      <div class="step"><div class="num">5</div><h4>Place</h4><p>Real opportunities via our agency route.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="insp block">
+  <div class="wrap">
+    <div class="txt">
+      <div class="kicker">Why it matters</div>
+      <h2>Inspection-Ready. Leadership-Ready. Placement-Ready.</h2>
+      <p class="sec-lead" style="text-align:left;margin:0">Registered Manager roles carry serious responsibility — leading safe, well-run services, protecting vulnerable people, supporting staff and evidencing quality to inspectors. We prepare you for that responsibility properly, not just on paper.</p>
+    </div>
+    <div class="badges">
+      <div class="badge"><div><b>Inspection-ready</b><p>Confident with Ofsted &amp; CQC expectations and evidence.</p></div></div>
+      <div class="badge"><div><b>Leadership-ready</b><p>Able to lead a team and run a regulated service.</p></div></div>
+      <div class="badge"><div><b>Placement-ready</b><p>Prepared, profiled and matched to genuine roles.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <p>"You already do half a manager's job. The Registered Manager Pathway helps you do the rest — with confidence."</p>
+  </div>
+</section>
+
+<section class="cta-sec" id="enquire">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <div class="kicker" style="color:var(--amber)">Your next step</div>
+        <h2>Your Next Step Towards Becoming a Registered Manager</h2>
+        <p class="lead">Ready to step up? Call us for a friendly chat, or send an enquiry and we'll be in touch.</p>
+        <div class="callbox">
+          <div class="lbl">Call us</div>
+          <a href="tel:02046180163">020 4618 0163</a>
+        </div>
+        <p style="font-size:14px;color:#9fb0c6">We support the candidate. We support the provider. We protect the placement process — and help build better leadership in care.</p>
+      </div>
+      <form name="rm-pathway-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="#enquire">
+        <input type="hidden" name="form-name" value="rm-pathway-enquiry">
+        <p class="hp"><label>Leave blank: <input name="bot-field"></label></p>
+        <h3>Enquire about the Pathway</h3>
+        <p class="fsub">No obligation. We'll explain how it works and whether it's right for you.</p>
+        <div class="field"><label>Full name</label><input name="name" required></div>
+        <div class="field"><label>Current role</label><input name="current_role" placeholder="e.g. Deputy Manager"></div>
+        <div class="field"><label>Location</label><input name="location" placeholder="Town / area"></div>
+        <div class="field"><label>Phone</label><input name="phone" type="tel" required></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required></div>
+        <div class="field"><label>Anything you'd like us to know?</label><textarea name="message"></textarea></div>
+        <button type="submit" class="btn amber">Send enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand" style="color:#fff;font-family:Fraunces,serif">Registered Manager <span style="color:var(--amber)">Pathway</span></div>
+      <p style="margin-top:8px;max-width:380px">Developing safe, confident and capable care leaders — through development, preparation and placement.</p>
+    </div>
+    <div>
+      <p style="font-weight:700;color:#fff;margin-bottom:6px">Get in touch</p>
+      <p>Call: <a href="tel:02046180163">020 4618 0163</a></p>
+      <p>Or <a href="#enquire">send an enquiry</a></p>
+      <p style="margin-top:8px">For care providers? <a href="providers.html">Provider partnership &rsaquo;</a></p>
+    </div>
+  </div>
+  <div class="wrap smallprint">
+    Important: The programme does not guarantee registration or employment. Final appointment decisions remain with the provider, and registration decisions remain with Ofsted, CQC or the relevant regulator. Any role, interview, introduction or placement opportunity arising through the programme is managed through our agency placement process. Candidates agree to act honestly, professionally and transparently, and to provide accurate information about their experience, qualifications and suitability.
+  </div>
+</footer>
+
+</body>
+</html>
